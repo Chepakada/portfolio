@@ -1,25 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import 
+{firstName, lastName, projectCards}
+from './components/constants'
+import NameAnimation from './Welcome';
+import Project from './components/Project';
+import ParticlesComponent from './components/Particles';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ParticlesComponent className = "background"/>
+      <div id='content'>
+        <h1>Hey There!</h1>
+        <NameAnimation name = {[firstName, lastName]}/>
+        
+      </div>
+      <div id = "content">
+      {
+          projectCards.map((project)=>{
+          return(
+            <Project specs = {project} key = {project.title}/>
+          )})
+        }
+      </div>
     </div>
   );
 }
 
 export default App;
+
