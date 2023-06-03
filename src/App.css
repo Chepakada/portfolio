@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin:5%
 }
 
 .App-logo {
@@ -21,17 +22,45 @@
 }
 h1, #intro{
   position: relative;
- 
   color: aliceblue;
   background-color: black;
 }
-#content{
+
+
+#contents{
   z-index: 2;
   
   position: relative;
   color:white;
 
 }
+
+#content{
+  z-index: 2;
+  position: relative;
+  color:white;
+}
+
+#experiences{
+  margin-top: 10em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 2em;
+}
+
+#projects{
+  margin-top: 10em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2em;
+}
+
+#contact{
+  margin-top: 5em;
+}
+
 
 .something{
   color:white

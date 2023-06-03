@@ -11,13 +11,11 @@ const ParticlesComponent = () => {
     
       var index = getIndex();
 
-      var color = colors[index]
+      
 
     const particlesInit = useCallback(async engine => {
         
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
+       
         await loadFull(engine);
     }, []);
 
@@ -37,7 +35,7 @@ const ParticlesComponent = () => {
                         value: "#000000",
                     },
                 },
-                fpsLimit: 120,
+                fpsLimit: 60,
                 interactivity: {
                     events: {
                         onClick: {
@@ -52,10 +50,10 @@ const ParticlesComponent = () => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
