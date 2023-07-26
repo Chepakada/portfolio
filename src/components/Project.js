@@ -10,7 +10,7 @@ const Project = (props)=>{
 
     return (
         <div className='projectCard'>
-            <a href= {url} target="_blank"><img src = "https://anamoladhikari.site/assets/github-3b4e1609.png" id = "imgIcon"/></a>
+            <div><a href= {url} target="_blank"><img src = "https://github.com/Chepakada/portfolio/blob/master/src/components/images/github.png?raw=true" id = "imgIcon"/></a></div>
             <img src = {image} alt = {title}/>
             <h2>{title}</h2>
             <p>{content}</p>

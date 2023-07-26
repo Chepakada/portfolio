@@ -4,13 +4,13 @@ const email = "prashantlamichhane68@gamail.com"
 const socialLinks = [{
         media: "linkedIn",
         url: "https://www.linkedin.com/in/prashant-lamichhane/",
-        logo: ""
+        logo: "https://github.com/Chepakada/portfolio/blob/master/src/components/images/github.png?raw=true"
 
     },
     {
         media: "github",
         url: "https://github.com/Chepakada",
-        logo: ""
+        logo: "https://github.com/Chepakada/portfolio/blob/master/src/components/images/linkedin.png?raw=true"
 
     }
 ]
@@ -26,7 +26,7 @@ const projectCards = [{
 
     {
         title: "NYPD Shooting Cases",
-        images: "https://github.com/Chepakada/portfolio/blob/master/src/components/images/r_project.png?raw=true",
+        image: "https://github.com/Chepakada/portfolio/blob/master/src/components/images/r_poject.png?raw=true",
         content: "A report on shooting cases in NYPD for year 2022 visualized with R",
         url: "https://github.com/Chepakada/NYPD-shooting-report.git"
     },
@@ -36,6 +36,7 @@ const projectCards = [{
         content: "A Blogging website with database where you can create profiles and post blogs which other people(profiles) can view and react to.",
         url: "https://github.com/aj-et/open-blog-platform.git"
     }
+   
 ]
 
 const experienceCards = [{

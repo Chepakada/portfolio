@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+
 import 
 {firstName, lastName, projectCards, experienceCards, positions, email}
 from './components/constants'
@@ -9,6 +10,7 @@ import Project from './components/Project';
 import ParticlesComponent from './components/Particles';
 import Experience from './components/Experience';
 import ContactForm from './components/contact';
+import SocialLinks from './components/socialIcons';
 
 function App() {
   var position_text = "";
@@ -19,16 +21,24 @@ function App() {
     <div className="App">
       <ParticlesComponent className = "background"/>
       <div id='contents'>
+        <SocialLinks></SocialLinks>
+        <div id = "topPart">
+          <div id = "text">
         <h1>Hey There!</h1>
         <h2><NameAnimation name = {[firstName, lastName]}/></h2>
         <h3>{position_text}</h3>
+        </div>
+        <div className='proImage'>
+          <img src = {"https://avatars.githubusercontent.com/u/92761252?v=4"} className = "Image"/>
+        </div>
+        </div>
         
 
         
       </div>
       <div id = "content">
         <div id = "experiences">
-          <h2>Experiences</h2>
+          <h2 className='heads'>Experiences</h2>
           {
             experienceCards.map((experience) =>{
               return(
@@ -38,7 +48,7 @@ function App() {
         </div>
         <br></br>
         
-        <h2>Projects</h2>
+        <h2 className='heads'>Projects</h2>
           
           <div id = "projects">
             
