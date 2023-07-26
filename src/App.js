@@ -22,6 +22,7 @@ function App() {
         <h1>Hey There!</h1>
         <h2><NameAnimation name = {[firstName, lastName]}/></h2>
         <h3>{position_text}</h3>
+        
 
         
       </div>
@@ -36,15 +37,18 @@ function App() {
           }
         </div>
         <br></br>
+        
         <h2>Projects</h2>
-        <div id = "projects">
           
-        {
-          projectCards.map((project)=>{
-          return(
-            <Project specs = {project} key = {project.title}/>
-          )})
-        }
+          <div id = "projects">
+            
+          {
+            projectCards.map((project)=>{
+            return(
+              <Project specs = {project} key = {project.title}/>
+            )})
+          }
+          
         </div>
         <div id = "contact">
           <ContactForm email=""/>

@@ -79,9 +79,18 @@ const ParticlesComponent = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2,
                         straight: false,
+                        
                     },
+                     acceleration: {
+                        x:0,
+                        y:0
+                    },
+                    decay:{
+                    value:0.1,
+                    random:true
+                   },
                     number: {
                         density: {
                             enable: true,

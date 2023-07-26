@@ -55,6 +55,7 @@ h1, #intro{
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 2em;
+  justify-content: space-around;
 }
 
 #contact{
