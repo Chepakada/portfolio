@@ -4,16 +4,21 @@ import './App.css';
 
 import 
 {firstName, lastName, projectCards, experienceCards, positions, email}
-from './components/constants'
+from './components/Constants'
 import NameAnimation from './Welcome';
-import Project from './components/Project';
+import Project from './components/Project/Project';
 import ParticlesComponent from './components/Particles';
 import Experience from './components/Experience';
-import ContactForm from './components/contact';
-import SocialLinks from './components/socialIcons';
+import ContactForm from './components/Contact';
+import SocialLinks from './components/SocialIcons';
+import { useEffect } from 'react';
 
 function App() {
   var position_text = "";
+
+  useEffect(()=>{
+    document.title = "Prashant Lamichhane"
+  })
 
   positions.map((position)=>{position_text +=` ${position} |`});
 
